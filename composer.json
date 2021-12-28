@@ -1,0 +1,25 @@
+{
+ 	"name": "pecee/simple-router-demo",
+ 	"description": "Simple router demo project",
+ 	"keywords": [
+		"simple-router",
+		"php",
+		"php-simple-router"
+	],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": ">=7.1",
+    "josegonzalez/dotenv": "dev-master",
+		"pecee/simple-router": "^4.0",
+ 	 	"illuminate/database": "^8.77"
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+    "autoload": {
+      "psr-4": {
+        "App\\": "app/"
+      }
+    }
+}
