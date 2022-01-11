@@ -12,7 +12,8 @@
 		"php": ">=7.1",
     "josegonzalez/dotenv": "dev-master",
 		"pecee/simple-router": "^4.0",
- 	 	"illuminate/database": "^8.77"
+ 	 	"illuminate/database": "^8.77",
+ 	 	"firebase/php-jwt": "^5.5"
 	},
 	"config": {
 		"preferred-install": "dist"
