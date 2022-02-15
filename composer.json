@@ -1,19 +1,20 @@
 {
- 	"name": "pecee/simple-router-demo",
- 	"description": "Simple router demo project",
+ 	"name": "gunturria/simple-router-ladoo",
+ 	"description": "Simple router dev",
  	"keywords": [
 		"simple-router",
 		"php",
-		"php-simple-router"
+		"php-ladoo-framework"
 	],
 	"license": "MIT",
 	"type": "project",
 	"require": {
 		"php": ">=7.1",
-    "josegonzalez/dotenv": "dev-master",
+                "josegonzalez/dotenv": "dev-master",
 		"pecee/simple-router": "^4.0",
  	 	"illuminate/database": "^8.77",
- 	 	"firebase/php-jwt": "^5.5"
+ 	 	"firebase/php-jwt": "^5.5",
+		"rakit/validation": "^1.0"
 	},
 	"config": {
 		"preferred-install": "dist"
