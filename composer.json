@@ -1,6 +1,7 @@
 {
- 	"name": "gunturria/simple-router-ladoo",
- 	"description": "Simple router dev",
+ 	"name": "gunturris/php-ladoo",
+	"version": "v1.0.0",
+ 	"description": "Simple PHP framework",
  	"keywords": [
 		"simple-router",
 		"php",
@@ -9,12 +10,14 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"php": ">=7.1",
-                "josegonzalez/dotenv": "dev-master",
-		"pecee/simple-router": "^4.0",
- 	 	"illuminate/database": "^8.77",
+		"php": ">=7.2",
+        "josegonzalez/dotenv": "dev-master",
+		"pecee/simple-router": "^4.0", 
  	 	"firebase/php-jwt": "^5.5",
-		"rakit/validation": "^1.0"
+		"jasongrimes/paginator": "~1.0", 
+        "jenssegers/blade": ">=2.0",
+		"asiasiapac/internal-logger":">=1.0"
+        
 	},
 	"config": {
 		"preferred-install": "dist"

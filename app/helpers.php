@@ -86,3 +86,8 @@ function csrf_token(): ?string
 
     return null;
 }
+
+
+function mustache_strint($lb){
+    return '{{ '. $lb .' }}';
+}
