@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use App\Models\User as User;
+use App\View;
 class DefaultController
 {
 	public function home(): string
@@ -26,6 +27,11 @@ class DefaultController
 
 	public function check(){
 		return "Framework telah siap!";
+	}
+
+
+	public function login_page(){
+		return View::present('login' , []);
 	}
 
 }
