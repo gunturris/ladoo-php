@@ -5,15 +5,18 @@ use App\View;
 
 class TestController{
 
+    public function table_test(){
+      return View::present('app.table', []); 
+    }
 
     public function body(){
         
-        return View::present('app.body',[]);
+        return View::present('app.body', []);
     }
 
     public function index(){
         
-        return View::present('app.test',[]);
+        return View::present('app.test', []);
     }
 
 

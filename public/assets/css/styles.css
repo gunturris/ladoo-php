@@ -81,7 +81,7 @@
 
 .card-body {
     padding: 25.6px;
-    padding: 1.6rem;
+    padding: 1.0rem;
 }
 
 .h-full {
@@ -110,7 +110,7 @@
     height: 100vh;
     width: 280px;
     overflow: hidden;
-    background: #303641;
+    background: #027bff;
     box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -140,8 +140,8 @@
 
 .sidebar-header {
     padding: 19px 32px 20px;
-    background: #303641;
-    border-bottom: 1px solid #343e50;
+    background: #4c515a;
+    
 }
 .sidebar-menu .logo{
     text-align: center;
@@ -157,7 +157,7 @@
 .metismenu li a {
     position: relative;
     display: block;
-    color: #8d97ad;
+    color: #dce0e8;
     font-size: 15px;
     text-transform: capitalize;
     padding: 15px 15px;
@@ -166,7 +166,7 @@
 }
 
 .metismenu li a i {
-    color: #6a56a5;
+    color: #dce0e8;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -177,7 +177,7 @@
     font-family: fontawesome;
     right: 15px;
     top: 12px;
-    color: #8d97ad;
+    color: #dce0e8;
     font-size: 20px;
 }
 
@@ -196,6 +196,7 @@
 .metismenu li.active>a,
 .metismenu li:hover>a {
     color: #fff;
+    font-weight: 500;
 }
 
 .metismenu li li a {
@@ -208,8 +209,9 @@
 
 .metismenu >li:hover>a,
 .metismenu >li.active>a {
-    color: #fff;
-    background: #343942;
+    color: #030303;
+    background: #4d6591;
+    font-weight: 600;
 }
 
 .metismenu li:hover>a,
@@ -396,7 +398,7 @@
 /*-------------------- 2.2 Header Area -------------------*/
 
 .header-area {
-    padding: 15px 30px;
+    padding: 0 30px;
     background: #fff;
     border-bottom: 1px solid #d8e3e7;
 }
@@ -480,7 +482,7 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    position: relative;
+    position: relative; 
     z-index: 1;
 }
 
@@ -608,19 +610,19 @@
 
 /* notify envelope */
 
-.expanded .notification-area li#full-view-exit {
+.expanded .notification-area a#full-view-exit {
     display: inline-block;
 }
 
-.notification-area li#full-view-exit {
+.notification-area a#full-view-exit {
     display: none;
 }
 
-.expanded .notification-area li#full-view {
+.expanded .notification-area a#full-view {
     display: none;
 }
 
-.notification-area li#full-view {
+.notification-area a#full-view {
     display: inline-block;
 }
 
@@ -717,8 +719,8 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+    background: -webkit-linear-gradient(left, #dadfe7 0%, #4d6591 100%);
+    background: linear-gradient(to right, #dadfe7 0%, #4d6591 100%);
     padding: 17px 38px;
     position: relative;
 }
@@ -793,7 +795,7 @@ ul.breadcrumbs {
     color: #8a8a8a;
     letter-spacing: 0;
     font-weight: 500;
-    padding: 4px 120px;
+    padding: 4px 60px;
     padding-left: 25px;
 }
 
