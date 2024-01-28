@@ -1,3 +1,23 @@
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    }
+    else
+    {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    // because unescape has been deprecated, replaced with decodeURI
+    //return unescape(dc.substring(begin + prefix.length, end));
+    return decodeURI(dc.substring(begin + prefix.length, end));
+} 
 
 (function($) {
     "use strict";
@@ -20,18 +40,43 @@
         $('.page-container').addClass('sbar_collapsed');
     }
     $('.nav-btn').on('click', function() {
+        
+        var expDate = new Date(); 
+        expDate.setTime(expDate.getTime() + (15 * 60 * 1000));
+
+        var navbarStatus = getCookie('nav-bar-display')
+        if ( navbarStatus == null ){ 
+            $.cookie('nav-bar-display', '1', { path: '/', expires: expDate } );
+            
+        }else if(navbarStatus == '1'){ 
+            $.cookie('nav-bar-display', '0', { path: '/', expires: expDate } );
+            
+        }else{
+
+            $.cookie('nav-bar-display', '1', { path: '/', expires: expDate } );    
+        }
+        
         $('.page-container').toggleClass('sbar_collapsed');
+        
     });
 
+    var navbarStatusX = getCookie('nav-bar-display')
+    if ( navbarStatusX == null ){ 
+        $('.page-container').toggleClass('sbar_collapsed');
+    }else if ( navbarStatusX == '1' ){
+         
+    }else  if ( navbarStatusX == '0' ){
+        $('.page-container').toggleClass('sbar_collapsed');
+    }   
     /*================================
     Start Footer resizer
     ==================================*/
-    var e = function() {
+    /*var e = function() {
         var e = (window.innerHeight > 0 ? window.innerHeight : this.screen.height) - 5;
         (e -= 67) < 1 && (e = 1), e > 67 && $(".main-content").css("min-height", e + "px")
     };
     $(window).ready(e), $(window).on("resize", e);
-
+    */
     /*================================
     sidebar menu
     ==================================*/

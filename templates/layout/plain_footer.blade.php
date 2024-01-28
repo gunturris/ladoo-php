@@ -1,23 +1,10 @@
-    
 
-
-        <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-                <p>Proudly presented by <a href="https://asi-asiapacific.com/">ASI Asiapacific</a>.<br/>Smart Platform 5 © Copyright {{ @date('Y')}}. All right reserved. </p>
-            </div>
-        </footer>
-        <!-- footer area end-->
-    </div>
+</div>
     <!-- page container area end -->
+  
 
-
-
-@include('layout.settings')
-
-
-    
-    
+    <!-- jquery latest version -->
+    <script src="/assets/js/vendor/jquery-2.2.4.min.js"></script>
     <!-- bootstrap 4 js -->
     <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
@@ -43,6 +30,15 @@
     <!-- others plugins -->
     <script src="/assets/js/plugins.js"></script>
     <script src="/assets/js/scripts.js"></script>
+
+
+<script language="javascript">
+    $(document).ready(function(){
+        $('#myModal').on('hidden.bs.modal', function () {
+        location.reload();
+        })
+    });
+</script>
 </body>
 
 </html>

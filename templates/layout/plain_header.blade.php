@@ -7,7 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>srtdash - ICO Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- link rel="shortcut icon" type="image/png" href="/assets/images/icon/favicon.ico" -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/themify-icons.css">
@@ -22,10 +21,10 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <!-- modernizr css -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
     <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <!-- jquery latest version -->
-    <script src="/assets/js/vendor/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 </head>
 
 <body>
@@ -39,9 +38,7 @@
     <!-- preloader area end -->
     <!-- page container area start -->
     <div class="page-container">
-        
-
-        @include('layout.menus')
+         
 
 
         

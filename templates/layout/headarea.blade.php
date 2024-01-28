@@ -2,7 +2,7 @@
 <div class="header-area">
                 <div class="row align-items-center">
                     <!-- nav and search button -->
-                    <div class="col-md-6 col-sm-8 clearfix dd">
+                    <div class="col-md-6 col-sm-8 clearfix  ">
                         <div class="nav-btn pull-left">
                             <span></span>
                             <span></span>
@@ -40,7 +40,7 @@
 
 
 
-            <!-- page title area start -->
+            <!-- page title area start  
             <div class="page-title-area">
                 <div class="row align-items-center">
                     
@@ -49,4 +49,4 @@
                     </div>
                 </div>
             </div>
-            <!-- page title area end -->
+            page title area end -->

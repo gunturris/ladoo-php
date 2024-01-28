@@ -162,7 +162,7 @@
 
 
 
-<div class="modal fade bd-example-modal-lg">
+<div class="modal fade bd-example-modal-lg" id="myModal" onclick="javascript:window.location.reload();">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
                 <div class="modal-header">
@@ -171,7 +171,7 @@
                 </div>
                 <div class="modal-body" style="height:550px" >
                 <p>
-                    <iframe src="https://colorlib.com/polygon/srtdash/modal.html" width="100%" height="500px" style="border:1px solid;"></iframe> 
+                    <iframe src="/test/form" width="100%" height="500px" style="border:1px solid #CDCDCD;"></iframe> 
                 </p>
                 </div> 
             </div>

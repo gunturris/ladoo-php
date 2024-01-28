@@ -5,18 +5,31 @@ use App\View;
 
 class TestController{
 
+    public function alert_test(){
+      return View::present('layout.success', []);  
+    }
+
+    public function submit_test(){
+       
+      return View::present('layout.success', []); 
+    }
+
+    public function form_test(){
+      return View::present('contoh.demoform', []);  
+    }
+
     public function table_test(){
-      return View::present('app.table', []); 
+      return View::present('contoh.table', []); 
     }
 
     public function body(){
         
-        return View::present('app.body', []);
+        return View::present('contoh.body', []);
     }
 
     public function index(){
         
-        return View::present('app.test', []);
+        return View::present('contoh.test', []);
     }
 
 
