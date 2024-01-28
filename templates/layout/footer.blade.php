@@ -4,7 +4,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-                <p>© Copyright 2024. All right reserved. Template by <a href="https://colorlib.com/wp/">Colorlib</a>.</p>
+                <p>Proudly presented by <a href="https://asi-asiapacific.com/">ASI Asiapacific</a>.<br/>Smart Platform 5 © Copyright {{ @date('Y')}}. All right reserved. </p>
             </div>
         </footer>
         <!-- footer area end-->

@@ -30,8 +30,15 @@
                             <div class="dataTables_length" id="dataTable2_length">
                                 <div class="float-right col-md-12">
                                     <div style="width:100%; text-align:right;padding-bottom:5px;">  
-                                    <button style="padding: 3px 25px;"> Excel </button>  
-                                    <button style="padding: 3px 25px;"> Add data </button> 
+                                    <button type="button" 
+                                            class="btn btn-success btn-flat btn-lg" 
+                                    > Excel </button>   
+
+                                    <button type="button" 
+                                            class="btn btn-primary btn-flat btn-lg" 
+                                            data-toggle="modal" 
+                                            data-target=".bd-example-modal-lg"
+                                    >Add data</button>
                                     </div>
                                 </div> 
                             </div>
@@ -53,6 +60,48 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr> 
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>09 / 07 / 2018</td>
+                                <td>$120</td>
+                                <td><i class="ti-trash"></i></td>
+                            </tr>
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Mark</td>
@@ -109,5 +158,28 @@
 <!-- table primary end -->
 
 </div>
+
+
+
+
+<div class="modal fade bd-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body" style="height:550px" >
+                <p>
+                    <iframe src="https://colorlib.com/polygon/srtdash/modal.html" width="100%" height="500px" style="border:1px solid;"></iframe> 
+                </p>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
 
 @include('layout.footer')
